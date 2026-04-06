@@ -1,7 +1,15 @@
+import { useState } from "react";
 import traktor1 from "../assets/traktor1.jpg";
 import traktor2 from "../assets/traktor2.jpg";
 import traktor3 from "../assets/traktor3.jpg";
 
+const [selectedImage, setSelectedImage] = useState(null);
+<img 
+  src={item.image} 
+  alt={item.title} 
+  className="gallery-image"
+  onClick={() => setSelectedImage(item.image)}
+/>
 const galleryItems = [
   {
     image: traktor1,
@@ -48,6 +56,10 @@ export default function GallerySection() {
           ))}
         </div>
       </div>
-    </section>
+    </section{selectedImage && (
+  <div className="lightbox" onClick={() => setSelectedImage(null)}>
+    <img src={selectedImage} className="lightbox-image" />
+  </div>
+)}>
   );
 }
