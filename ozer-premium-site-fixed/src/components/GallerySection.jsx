@@ -22,7 +22,7 @@ const galleryItems = [
 
 export default function GallerySection() {
   return (
-    <section id="galeri">
+    <section id="galeri" className="gallery-section">
       <div className="container">
         <div className="section-head">
           <div className="eyebrow green">Fotoğraf Galerisi</div>
