@@ -1,7 +1,4 @@
-import "./styles.css";
-import GallerySection from "./components/GallerySection";
-
-export default function App() {
+export default function OzerTarimSite() {
   const features = [
     {
       title: "Büyükbaş Hayvancılık",
@@ -45,180 +42,211 @@ export default function App() {
   ];
 
   return (
-    <div className="page">
-      <a
-        href="https://wa.me/905301151933"
-        target="_blank"
-        rel="noreferrer"
-        className="whatsapp-float"
-      >
-        WhatsApp ile Yaz
-      </a>
+    <div className="min-h-screen bg-stone-50 text-stone-900">
+      <section className="relative overflow-hidden border-b border-stone-200 bg-gradient-to-br from-emerald-950 via-emerald-900 to-stone-900 text-white">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute -top-20 -left-10 h-72 w-72 rounded-full bg-yellow-400 blur-3xl" />
+          <div className="absolute right-0 top-20 h-80 w-80 rounded-full bg-emerald-400 blur-3xl" />
+        </div>
 
-      <header className="hero">
-        <div className="hero-bg hero-bg-one"></div>
-        <div className="hero-bg hero-bg-two"></div>
-        <div className="container">
-          <nav className="nav">
+        <div className="relative mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
+          <nav className="mb-14 flex items-center justify-between">
             <div>
-              <div className="brand-main">ÖZER</div>
-              <div className="brand-sub">Tarım ve Hayvancılık</div>
+              <div className="text-2xl font-black tracking-[0.22em]">ÖZER</div>
+              <div className="text-sm uppercase tracking-[0.35em] text-emerald-200">
+                Tarım ve Hayvancılık
+              </div>
             </div>
-            <div className="nav-links">
-              <a href="#hakkimizda">Hakkımızda</a>
-              <a href="#hizmetler">Faaliyetler</a>
-              <a href="#galeri">Galeri</a>
-              <a href="#youtube">YouTube</a>
-              <a href="#iletisim">İletişim</a>
+            <div className="hidden gap-6 text-sm text-emerald-100 md:flex">
+              <a href="#hakkimizda" className="transition hover:text-yellow-300">
+                Hakkımızda
+              </a>
+              <a href="#hizmetler" className="transition hover:text-yellow-300">
+                Faaliyetler
+              </a>
+              <a href="#galeri" className="transition hover:text-yellow-300">
+                Galeri
+              </a>
+              <a href="#youtube" className="transition hover:text-yellow-300">
+                YouTube
+              </a>
+              <a href="#iletisim" className="transition hover:text-yellow-300">
+                İletişim
+              </a>
             </div>
           </nav>
 
-          <div className="hero-grid">
+          <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
-              <div className="badge">Tokat • Söngüt Köyü</div>
-              <h1 className="hero-title">
-                Tokat Söngüt Köyü&apos;nde
-                <span> güvenilir tarım ve hayvancılık.</span>
+              <div className="mb-4 inline-flex rounded-full border border-yellow-300/30 bg-white/10 px-4 py-2 text-sm text-yellow-200 backdrop-blur">
+                Tokat • Söngüt Köyü
+              </div>
+              <h1 className="max-w-3xl text-4xl font-black leading-tight md:text-6xl">
+                Doğadan gelen güç,
+                <span className="block text-yellow-300">emeğe dayanan üretim.</span>
               </h1>
-              <p className="hero-text">
-                Özer Tarım ve Hayvancılık; büyükbaş hayvancılık, tarımsal üretim ve
-                köy kültürünü modern bir marka anlayışıyla bir araya getiren güçlü bir
-                çiftlik yapısını temsil eder.
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-200">
+                Özer Tarım ve Hayvancılık; büyükbaş hayvancılık, tarımsal üretim ve köy kültürünü
+                modern bir marka anlayışıyla bir araya getiren güçlü bir çiftlik yapısını temsil eder.
               </p>
 
-              <div className="button-row">
+              <div className="mt-8 flex flex-wrap gap-4">
                 <a
-                  href="https://wa.me/905301151933"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-gold"
+                  href="#iletisim"
+                  className="rounded-2xl bg-yellow-400 px-6 py-3 font-semibold text-stone-900 shadow-lg shadow-yellow-900/20 transition hover:scale-[1.02]"
                 >
-                  WhatsApp ile Ulaş
+                  Bizimle İletişime Geç
                 </a>
                 <a
-                  href="https://www.youtube.com/@%C3%B6zertar%C4%B1mvehayvanc%C4%B1l%C4%B1k"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-outline"
+                  href="#youtube"
+                  className="rounded-2xl border border-white/20 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition hover:bg-white/15"
                 >
                   YouTube Kanalımız
                 </a>
               </div>
             </div>
 
-            <div className="hero-card-wrap">
-              <div className="hero-card">
-                <div className="card-header">
-                  <div>
-                    <div className="eyebrow">Özer Çiftlik Vitrini</div>
-                    <div className="card-title">Marka Kimliği</div>
-                  </div>
-                  <div className="emoji">🌾</div>
-                </div>
-
-                <div className="stats-grid">
-                  {stats.map((item) => (
-                    <div key={item.label} className="stat-box">
-                      <div className="stat-value">{item.value}</div>
-                      <div className="stat-label">{item.label}</div>
+            <div className="relative">
+              <div className="rounded-[2rem] border border-white/10 bg-white/10 p-4 shadow-2xl backdrop-blur">
+                <div className="rounded-[1.5rem] bg-stone-100 p-6 text-stone-900">
+                  <div className="mb-6 flex items-center justify-between">
+                    <div>
+                      <div className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-800">
+                        Özer Çiftlik Vitrini
+                      </div>
+                      <div className="mt-2 text-2xl font-black">Marka Kimliği</div>
                     </div>
-                  ))}
-                </div>
+                    <div className="text-5xl">🌾</div>
+                  </div>
 
-                <div className="highlight-box">
-                  <div className="highlight-eyebrow">Öne çıkan alanlar</div>
-                  <div className="pill-grid">
-                    <div className="pill">Büyükbaş</div>
-                    <div className="pill">Tarım</div>
-                    <div className="pill">YouTube İçerikleri</div>
+                  <div className="grid gap-4 sm:grid-cols-3">
+                    {stats.map((item) => (
+                      <div key={item.label} className="rounded-2xl border border-stone-200 bg-white p-4 shadow-sm">
+                        <div className="text-2xl font-black text-emerald-900">{item.value}</div>
+                        <div className="mt-1 text-sm text-stone-600">{item.label}</div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-6 rounded-3xl bg-gradient-to-r from-emerald-900 to-emerald-700 p-6 text-white">
+                    <div className="text-sm uppercase tracking-[0.3em] text-yellow-200">Öne çıkan alanlar</div>
+                    <div className="mt-3 grid gap-3 sm:grid-cols-3">
+                      <div className="rounded-2xl bg-white/10 p-4">Büyükbaş</div>
+                      <div className="rounded-2xl bg-white/10 p-4">Tarım</div>
+                      <div className="rounded-2xl bg-white/10 p-4">YouTube İçerikleri</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
+      </section>
 
-      <section id="hizmetler" className="section">
-        <div className="container">
-          <div className="section-head">
-            <div className="eyebrow green">Faaliyetlerimiz</div>
-            <h2>Çiftliğimizin ana gücü</h2>
-            <p>
-              Gelenekten ilham alan, güven veren ve dijitalde güçlü görünen bir çiftlik
-              markası için temel alanlarımız.
-            </p>
-          </div>
+      <section id="hizmetler" className="mx-auto max-w-7xl px-6 py-16 md:px-10">
+        <div className="mb-10 max-w-2xl">
+          <div className="text-sm font-bold uppercase tracking-[0.35em] text-emerald-700">Faaliyetlerimiz (Instagram: @ozertarimvehayvancilik)</div>
+          <h2 className="mt-3 text-3xl font-black md:text-4xl">Çiftliğimizin ana gücü</h2>
+          <p className="mt-4 text-lg leading-8 text-stone-600">
+            Gelenekten ilham alan, güven veren ve dijitalde güçlü görünen bir çiftlik markası için temel alanlarımız.
+          </p>
+        </div>
 
-          <div className="feature-grid">
-            {features.map((feature) => (
-              <div key={feature.title} className="feature-card">
-                <div className="feature-icon">{feature.icon}</div>
-                <h3>{feature.title}</h3>
-                <p>{feature.description}</p>
+        <div className="grid gap-6 md:grid-cols-3">
+          {features.map((feature) => (
+            <div
+              key={feature.title}
+              className="rounded-[2rem] border border-stone-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-3xl">
+                {feature.icon}
               </div>
-            ))}
-          </div>
+              <h3 className="text-2xl font-black">{feature.title}</h3>
+              <p className="mt-3 leading-8 text-stone-600">{feature.description}</p>
+            </div>
+          ))}
         </div>
       </section>
 
-      <section id="hakkimizda" className="section section-white">
-        <div className="container two-col">
-          <div className="about-box">
-            <div className="eyebrow green">Hakkımızda</div>
-            <h2>Köyden gelen gerçek üretim hikâyesi</h2>
-            <p>
-              Özer Tarım ve Hayvancılık, Tokat Söngüt Köyü&apos;nde üretimin emeğe,
-              toprağa ve güvene dayandığı bir çiftlik yaklaşımını temsil eder.
-              Büyükbaş hayvancılık ile tarımsal faaliyetleri aynı çatı altında
-              buluştururken, geleneksel üretim kültürünü modern görünümle destekler.
+      <section id="hakkimizda" className="bg-white py-16">
+        <div className="mx-auto grid max-w-7xl gap-8 px-6 md:px-10 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="rounded-[2rem] border border-stone-200 bg-stone-50 p-8 md:p-10">
+            <div className="text-sm font-bold uppercase tracking-[0.35em] text-emerald-700">Hakkımızda</div>
+            <h2 className="mt-3 text-3xl font-black md:text-4xl">Köyden gelen gerçek üretim hikâyesi</h2>
+            <p className="mt-5 text-lg leading-8 text-stone-600">
+              Özer Tarım ve Hayvancılık, Tokat Söngüt Köyü'nde üretimin emeğe, toprağa ve güvene dayandığı bir çiftlik yaklaşımını temsil eder.
+              Büyükbaş hayvancılık ile tarımsal faaliyetleri aynı çatı altında buluştururken, geleneksel üretim kültürünü modern görünümle destekler.
             </p>
-            <p>
-              Bu site; çiftliğinizi tanıtmak, müşterilerinizle güven ilişkisi kurmak ve
-              YouTube içeriklerinizi sergilemek için tasarlanmış premium bir başlangıç
-              sayfasıdır.
+            <p className="mt-4 text-lg leading-8 text-stone-600">
+              Bu site; çiftliğinizi tanıtmak, müşterilerinizle güven ilişkisi kurmak ve ileride YouTube içeriklerinizi sergilemek için tasarlanmış güçlü bir başlangıç sayfasıdır.
             </p>
           </div>
 
-          <div className="card-column">
+          <div className="grid gap-6">
             {cards.map((card) => (
-              <div key={card.title} className="info-card">
-                <h3>{card.title}</h3>
-                <p>{card.text}</p>
+              <div key={card.title} className="rounded-[2rem] border border-stone-200 bg-white p-8 shadow-sm">
+                <h3 className="text-2xl font-black text-emerald-900">{card.title}</h3>
+                <p className="mt-3 leading-8 text-stone-600">{card.text}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <GallerySection />
+      <section id="galeri" className="mx-auto max-w-7xl px-6 py-16 md:px-10">
+        <div className="mb-10 max-w-2xl">
+          <div className="text-sm font-bold uppercase tracking-[0.35em] text-emerald-700">Fotoğraf Galerisi</div>
+          <h2 className="mt-3 text-3xl font-black md:text-4xl">Çiftliğimizden kareler</h2>
+          <p className="mt-4 text-lg leading-8 text-stone-600">
+            Büyükbaş hayvancılık, tarımsal üretim, traktör çalışmaları ve köy yaşamını yansıtan görseller burada yer alacak.
+          </p>
+        </div>
 
-      <section id="youtube" className="section">
-        <div className="container">
-          <div className="youtube-box">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {[
+            "Büyükbaş hayvanlarımız",
+            "Traktör ve tarla çalışmaları",
+            "Çiftlik genel görünüm",
+            "Ahır ve bakım alanları",
+            "Doğal üretim anları",
+            "Tokat Söngüt Köyü manzarası",
+          ].map((item) => (
+            <div key={item} className="overflow-hidden rounded-[2rem] border border-stone-200 bg-white shadow-sm">
+              <div className="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-emerald-100 via-stone-100 to-yellow-100 text-center text-lg font-semibold text-stone-500">
+                Fotoğraf Alanı
+              </div>
+              <div className="p-5">
+                <div className="text-lg font-bold text-emerald-900">{item}</div>
+                <div className="mt-2 text-sm leading-6 text-stone-600">
+                  Buraya gerçek çiftlik fotoğrafı eklenecek.
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="youtube" className="mx-auto max-w-7xl px-6 py-16 md:px-10">
+        <div className="rounded-[2rem] bg-gradient-to-r from-yellow-400 via-yellow-300 to-amber-200 p-8 shadow-xl md:p-10">
+          <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
             <div>
-              <div className="eyebrow dark">YouTube Kanalı</div>
-              <h2>Çiftliğin hikâyesini videolarla büyütün</h2>
-              <p>
-                Çiftlik yaşamı, traktör çalışmaları, bakım süreçleri ve üretim
-                görüntüleriyle güçlü bir dijital marka oluşturun.
+              <div className="text-sm font-bold uppercase tracking-[0.35em] text-stone-800">YouTube Kanalı</div>
+              <h2 className="mt-3 text-3xl font-black text-stone-900 md:text-4xl">
+                Çiftliğin hikâyesini videolarla büyütün
+              </h2>
+              <p className="mt-4 text-lg leading-8 text-stone-800/80">
+                Buraya ileride YouTube videoları, günlük çiftlik yaşamı, traktör çalışmaları, bakım süreçleri ve üretim görüntüleri eklenebilir.
               </p>
-              <a
-                href="https://www.youtube.com/@%C3%B6zertar%C4%B1mvehayvanc%C4%B1l%C4%B1k"
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-dark"
-              >
-                Kanalı Aç
-              </a>
             </div>
 
-            <div className="video-card">
-              <div className="video-placeholder">
-                <div className="play">▶</div>
-                <div className="video-title">YouTube Kanalımız</div>
-                <div className="video-subtitle">
-                  youtube.com/@özertarımvehayvancılık
+            <div className="rounded-[2rem] bg-white p-6 shadow-lg">
+              <div className="aspect-video rounded-[1.5rem] bg-stone-900 p-4 text-white">
+                <div className="flex h-full flex-col items-center justify-center rounded-[1.25rem] border border-white/10 border-dashed bg-stone-800 text-center">
+                  <div className="text-5xl">▶</div>
+                  <div className="mt-4 text-lg font-semibold">YouTube Kanalımız</div>
+                  <div className="mt-2 max-w-sm text-sm text-stone-300">
+                    YouTube kanalımızı ziyaret edin: https://www.youtube.com/@özertarımvehayvancılık
+                  </div>
                 </div>
               </div>
             </div>
@@ -226,77 +254,53 @@ export default function App() {
         </div>
       </section>
 
-      <section className="section section-white">
-        <div className="container">
-          <div className="social-box">
-            <div className="eyebrow green">Sosyal Medya</div>
-            <h2>Instagram&apos;da bizi takip edin</h2>
-            <p>
-              Günlük paylaşımlar, çiftlikten görüntüler ve yeni içerikler için Instagram
-              hesabımıza göz atın.
-            </p>
-            <a
-              href="https://www.instagram.com/ozertarimvehayvancilik"
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-green"
-            >
-              Instagram Hesabımız
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section id="iletisim" className="footer-contact">
-        <div className="container contact-grid">
+      <section id="iletisim" className="bg-stone-900 py-16 text-white">
+        <div className="mx-auto grid max-w-7xl gap-8 px-6 md:px-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <div className="eyebrow gold">İletişim</div>
-            <h2>Bizimle iletişime geçin</h2>
-            <p>
-              Telefon, WhatsApp, e-posta ve sosyal medya hesaplarımız üzerinden bize
-              ulaşabilirsiniz.
+            <div className="text-sm font-bold uppercase tracking-[0.35em] text-yellow-300">İletişim</div>
+            <h2 className="mt-3 text-3xl font-black md:text-4xl">Bizimle iletişime geçin</h2>
+            <p className="mt-4 max-w-xl text-lg leading-8 text-stone-300">
+              Telefon numaranız, WhatsApp hattınız, konum bağlantınız ve sosyal medya hesaplarınız buraya eklenebilir.
             </p>
 
-            <div className="contact-list">
-              <div className="contact-item">📍 Tokat / Söngüt Köyü</div>
-              <div className="contact-item">📞 +90 530 115 19 33</div>
-              <div className="contact-item">📱 WhatsApp: +90 530 115 19 33</div>
-              <div className="contact-item">📧 emirkosehan@gmail.com</div>
+            <div className="mt-8 space-y-4 text-stone-200">
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">📍 Tokat / Söngüt Köyü
+              <div className="mt-3 rounded-2xl border border-white/10 bg-white/5 p-4">📱 WhatsApp: +90 530 115 19 33</div></div>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">📞 +90 530 115 19 33</div>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">📧 emirkosehan@gmail.com</div>
             </div>
           </div>
 
-          <div className="quick-links">
-            <h3>Hızlı Bağlantılar</h3>
-            <div className="quick-links-grid">
-              <a
-                href="https://wa.me/905301151933"
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-whatsapp"
-              >
-                WhatsApp&apos;tan Yaz
-              </a>
-              <a href="mailto:emirkosehan@gmail.com" className="btn btn-outline-light">
-                E-posta Gönder
-              </a>
-              <a
-                href="https://www.instagram.com/ozertarimvehayvancilik"
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-outline-light"
-              >
-                Instagram&apos;a Git
-              </a>
-              <a
-                href="https://www.youtube.com/@%C3%B6zertar%C4%B1mvehayvanc%C4%B1l%C4%B1k"
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-outline-light"
-              >
-                YouTube Kanalını Aç
-              </a>
+          <form className="rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur md:p-8">
+            <div className="grid gap-5 md:grid-cols-2">
+              <input
+                type="text"
+                placeholder="Ad Soyad"
+                className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 outline-none placeholder:text-stone-400"
+              />
+              <input
+                type="tel"
+                placeholder="Telefon"
+                className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 outline-none placeholder:text-stone-400"
+              />
             </div>
-          </div>
+            <input
+              type="email"
+              placeholder="E-posta"
+              className="mt-5 w-full rounded-2xl border border-white/10 bg-white/10 px-4 py-3 outline-none placeholder:text-stone-400"
+            />
+            <textarea
+              placeholder="Mesajınız"
+              rows={6}
+              className="mt-5 w-full rounded-2xl border border-white/10 bg-white/10 px-4 py-3 outline-none placeholder:text-stone-400"
+            />
+            <button
+              type="button"
+              className="mt-5 rounded-2xl bg-yellow-400 px-6 py-3 font-semibold text-stone-900 transition hover:scale-[1.01]"
+            >
+              Mesaj Gönder
+            </button>
+          </form>
         </div>
       </section>
     </div>
