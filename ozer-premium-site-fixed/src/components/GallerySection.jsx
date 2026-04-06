@@ -30,6 +30,7 @@ const galleryItems = [
 
 export default function GallerySection() {
   return (
+  <>
     <section id="galeri" className="gallery-section">
       <div className="container">
         <div className="section-head">
@@ -45,7 +46,12 @@ export default function GallerySection() {
           {galleryItems.map((item, index) => (
             <div key={index} className="gallery-card">
               <div className="gallery-image-wrap">
-                <img src={item.image} alt={item.title} className="gallery-image" />
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="gallery-image"
+                  onClick={() => setSelectedImage(item.image)}
+                />
               </div>
 
               <div className="gallery-content">
@@ -56,10 +62,12 @@ export default function GallerySection() {
           ))}
         </div>
       </div>
-    </section{selectedImage && (
-  <div className="lightbox" onClick={() => setSelectedImage(null)}>
-    <img src={selectedImage} className="lightbox-image" />
-  </div>
-)}>
-  );
-}
+    </section>
+
+    {selectedImage && (
+      <div className="lightbox" onClick={() => setSelectedImage(null)}>
+        <img src={selectedImage} alt="Büyük görsel" className="lightbox-image" />
+      </div>
+    )}
+  </>
+);
