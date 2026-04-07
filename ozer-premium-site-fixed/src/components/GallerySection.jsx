@@ -1,9 +1,39 @@
 import { useState } from "react";
+import koy1 from "../assets/koy1.jpg";
+import koy2 from "../assets/koy2.jpg";
+import koy3 from "../assets/koy3.jpg";
+import koy4 from "../assets/koy4.jpg";
+import koy5 from "../assets/koy5.jpg";
 import traktor1 from "../assets/traktor1.jpg";
 import traktor2 from "../assets/traktor2.jpg";
 import traktor3 from "../assets/traktor3.jpg";
 
 const galleryItems = [
+  {
+  image: koy1,
+  title: "Tarla Görünümü",
+  desc: "Tarladan Görüntülerimiz.",
+},
+{
+  image: koy2,
+  title: "Tarla Görünümü",
+  desc: "Tarladan Görüntülerimiz..",
+},
+{
+  image: koy3,
+  title: "Tarla Çalışması",
+  desc: "Toprakla iç içe üretim süreci.",
+},
+{
+  image: koy4,
+  title: "Tarla Çalışması",
+  desc: "Çiftlikte günlük yaşamdan kareler.",
+},
+{
+  image: koy5,
+  title: "Tarla Çalışması",
+  desc: "Doğal ve sürdürülebilir üretim.",
+},
   {
     image: traktor1,
     title: "Traktör ve Çiftlik",
