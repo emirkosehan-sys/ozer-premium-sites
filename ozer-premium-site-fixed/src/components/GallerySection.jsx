@@ -7,6 +7,17 @@ import koy5 from "../assets/koy5.jpg";
 import traktor1 from "../assets/traktor1.jpg";
 import traktor2 from "../assets/traktor2.jpg";
 import traktor3 from "../assets/traktor3.jpg";
+import hayvan1 from "../assets/hayvan1.jpg";
+import hayvan2 from "../assets/hayvan2.jpg";
+import hayvan3 from "../assets/hayvan3.jpg";
+import traktor4 from "../assets/traktor4.jpg";
+import koy7 from "../assets/koy7.jpg";
+import koy8 from "../assets/koy8.jpg";
+import koy9 from "../assets/koy9.jpg";
+import koy10 from "../assets/koy10.jpg";
+import tarla1 from "../assets/tarla1.jpg";
+import tarla2 from "../assets/tarla2.jpg";
+import tarla3 from "../assets/tarla3.jpg";
 
 const categories = [
   { id: "traktor", title: "Traktör" },
@@ -15,6 +26,78 @@ const categories = [
 ];
 
 const allItems = [
+  // HAYVAN
+  {
+    image: hayvan1,
+    title: "Hayvan",
+    desc: "Büyükbaş hayvan",
+    category: "hayvan",
+  },
+  {
+    image: hayvan2,
+    title: "Hayvan",
+    desc: "Çiftlik yaşamı",
+    category: "hayvan",
+  },
+  {
+    image: hayvan3,
+    title: "Hayvan",
+    desc: "Doğal üretim",
+    category: "hayvan",
+  },
+
+  // TRAKTÖR
+  {
+    image: traktor4,
+    title: "Traktör",
+    desc: "Güçlü ekipman",
+    category: "traktor",
+  },
+
+  // TARLA
+  {
+    image: koy7,
+    title: "Tarla",
+    desc: "Üretim",
+    category: "tarla",
+  },
+  {
+    image: koy8,
+    title: "Tarla",
+    desc: "Doğal tarım",
+    category: "tarla",
+  },
+  {
+    image: koy9,
+    title: "Tarla",
+    desc: "Çalışma",
+    category: "tarla",
+  },
+  {
+    image: koy10,
+    title: "Tarla",
+    desc: "Köy hayatı",
+    category: "tarla",
+  },
+  {
+    image: tarla1,
+    title: "Tarla",
+    desc: "Toprak",
+    category: "tarla",
+  },
+  {
+    image: tarla2,
+    title: "Tarla",
+    desc: "Verim",
+    category: "tarla",
+  },
+  {
+    image: tarla3,
+    title: "Tarla",
+    desc: "Üretim süreci",
+    category: "tarla",
+  },
+];
   {
     image: koy1,
     title: "Tarla",
