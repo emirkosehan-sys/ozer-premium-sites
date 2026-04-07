@@ -26,7 +26,6 @@ const categories = [
 ];
 
 const allItems = [
-  // HAYVAN
   {
     image: hayvan1,
     title: "Hayvan",
@@ -45,16 +44,12 @@ const allItems = [
     desc: "Doğal üretim",
     category: "hayvan",
   },
-
-  // TRAKTÖR
   {
     image: traktor4,
     title: "Traktör",
     desc: "Güçlü ekipman",
     category: "traktor",
   },
-
-  // TARLA
   {
     image: koy7,
     title: "Tarla",
@@ -97,7 +92,6 @@ const allItems = [
     desc: "Üretim süreci",
     category: "tarla",
   },
-];
   {
     image: koy1,
     title: "Tarla",
