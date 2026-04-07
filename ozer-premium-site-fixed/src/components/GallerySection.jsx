@@ -4,7 +4,6 @@ import koy2 from "../assets/koy2.jpg";
 import koy3 from "../assets/koy3.jpg";
 import koy4 from "../assets/koy4.jpg";
 import koy5 from "../assets/koy5.jpg";
-
 import traktor1 from "../assets/traktor1.jpg";
 import traktor2 from "../assets/traktor2.jpg";
 import traktor3 from "../assets/traktor3.jpg";
@@ -18,36 +17,35 @@ const categories = [
 const allItems = [
   {
     image: koy1,
-    title: "Traktör Sahası",
-    desc: "Tarlalarımızdan bir kare",
+    title: "Tarla",
+    desc: "Tarla çalışması",
     category: "tarla",
   },
   {
     image: koy2,
-    title: "Hayvanlarımız",
-    desc: "Üretim sürecinden tarla görüntüsü.",
+    title: "Tarla",
+    desc: "Doğal üretim",
     category: "tarla",
   },
   {
     image: koy3,
-    title: "Tarla Çalışması",
-    desc: "Üretim sürecinden tarla görüntüsü.",
+    title: "Tarla",
+    desc: "Üretim süreci",
     category: "tarla",
   },
   {
     image: koy4,
-    title: "Traktör Yakın Plan",
-    desc: "Güçlü ekipmanlarımızdan detay görüntü.",
+    title: "Traktör",
+    desc: "Traktör çalışması",
     category: "traktor",
   },
   {
     image: koy5,
-    title: "Doğal Üretim",
-    desc: "Tarla Çalışması",
+    title: "Traktör",
+    desc: "Güçlü ekipman",
     category: "traktor",
   },
-];
-{
+  {
     image: traktor1,
     title: "Traktör",
     desc: "Modern tarım",
@@ -66,7 +64,6 @@ const allItems = [
     category: "traktor",
   },
 ];
-
 export default function GallerySection() {
   const [selectedCategory, setSelectedCategory] = useState("traktor");
   const [selectedImage, setSelectedImage] = useState(null);
